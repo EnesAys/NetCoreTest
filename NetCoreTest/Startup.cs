@@ -20,7 +20,7 @@ namespace NetCoreTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<INameService, NameService>();
+            services.AddTransient<INameService, NameService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
